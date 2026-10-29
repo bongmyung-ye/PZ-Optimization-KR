@@ -23,7 +23,7 @@ pzopt-589f2f3f-discord/
 └─ pzopt-4a0e9546ec-classes.zip
 ```
 
-**주의:** `uninstall.ps1`과 `uninstall.sh`는 최신 공개 설치 프로그램을 인터넷에서 받아 실행합니다. 이 테스트 빌드를 제거할 때는 해당 파일 대신 아래에 안내한 **`install.ps1 -Uninstall`** 또는 **`install.sh --uninstall`**을 사용하세요.
+**주의:** `uninstall.ps1`과 `uninstall.sh`는 최신 공개 설치 프로그램을 인터넷에서 받아 실행합니다. 이 비공개 빌드를 제거할 때는 해당 파일 대신 아래에 안내한 **`install.ps1 -Uninstall`** 또는 **`install.sh --uninstall`**을 사용하세요.
 
 ## 2. Windows
 
@@ -178,3 +178,31 @@ shasum -a 256 pzopt-4a0e9546ec-classes.zip
 
 **오류 제보 시 필요한 정보**  
 게임 빌드/리비전, 운영체제, 그래픽카드, 모드 수, 재현 방법, 문제가 발생한 화면과 로그를 함께 전달해 주세요. Windows 기준 로그는 `%USERPROFILE%\Zomboid\console.txt`에 있습니다.
+
+## 한국어 패치 설치 (Windows)
+
+한국어 패치는 PZ Optimization 원본과 별도로 설치합니다.
+
+1. 게임을 종료하고 원본 PZ Optimization 설치를 완료합니다.
+2. GitHub Releases에서 `PZOptKorean-589f2f3f.zip`을 다운로드합니다.
+3. 압축파일 안의 `PZOptKorean` 폴더를 `%USERPROFILE%\Zomboid\mods`에 복사합니다.
+4. 게임의 모드 목록에서 `PZOptKorean`을 활성화합니다.
+5. PZ Optimization 설정 화면에서 한국어 표시를 확인합니다.
+
+설치 후 다음 파일이 있어야 합니다.
+
+```text
+%USERPROFILE%\Zomboid\mods\PZOptKorean\42.0\mod.info
+```
+
+기존 창작마당 한국어 패치 및 이전 테스트 패치를 중복 활성화하지 마세요.
+
+한국어 패치 Mod ID: `PZOptKorean`
+
+한국어 패치 소스: https://github.com/bongmyung-ye/pzopt-korean
+
+한국어 패치 ZIP SHA-256:
+
+```text
+abe6801f927ee0d08d1382af28ba3f340be8eb5e5ca285351e8626fc816b7328
+```

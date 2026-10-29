@@ -1,90 +1,206 @@
-# PZ Optimization — 한국어 배포 안내
+# PZ Optimization 589f2f3f — 비공개 빌드
 
-프로젝트 좀보이드용 최적화 모드 **PZ Optimization**의 `589f2f3f` 테스트 빌드를 한국어로 안내하는 비공식 배포 저장소입니다.
+**Project Zomboid Build 42.21 / 게임 리비전 `4a0e9546ec` 전용**
 
-모드 개발자는 **xD3I**입니다. 이 저장소는 제작자의 재배포 허락을 바탕으로 운영하며, 모드 자체를 수정하거나 별도로 개발한 버전은 제공하지 않습니다.
+PZ Optimization 제작자 **xD3I**가 2026년 10월 26일 Discord `#pre-release-testing` 채널에 공개한 비공개 개발 빌드입니다.
 
-- 원본 프로젝트: [xD3I/PZ_Optimization](https://github.com/xD3I/PZ_Optimization)
-- 배포 출처: PZ Optimization 공식 Discord `#pre-release-testing` (2026년 10월 26일)
-- 테스트 빌드: `589f2f3f`
-- 게임: Project Zomboid Build **42.21**, 리비전 **`4a0e9546ec`**
-- 운영체제: Windows, Linux, macOS
+제작자의 재배포 허락을 받아 한국 커뮤니티에 공유합니다. 정식 안정판이 아니므로 설치 전 주의사항을 확인하세요.
 
-> **테스트 빌드 안내**  
-> 이번 파일은 제작자가 Discord에 공개한 사전 테스트용 빌드이며, 정식 안정판이 아닙니다. 게임 빌드 번호가 같아도 내부 리비전이 다르면 설치할 수 없습니다. 플레이 중인 저장 파일은 따로 백업한 뒤 사용하세요.
+| 항목 | 내용 |
+| --- | --- |
+| 제작자 | xD3I |
+| 빌드 | `589f2f3f` |
+| 배포일 | 2026년 10월 26일 |
+| 지원 게임 | Project Zomboid Build 42.21 |
+| 게임 리비전 | `4a0e9546ec` |
+| 지원 운영체제 | Windows / Linux / macOS |
+| 배포 유형 | 비공개 개발 빌드 |
+
+**관련 저장소**
+
+- [PZ Optimization 원본](https://github.com/xD3I/PZ_Optimization)
+- [한국어 배포 저장소](https://github.com/bongmyung-ye/PZ-Optimization-KR)
+- [한국어 패치 소스](https://github.com/bongmyung-ye/pzopt-korean)
+
+---
+
+## 주요 변경 사항
+
+### 성능 및 모드 호환성
+
+- 모드 Lua 이벤트 처리 개선
+- 좀비 업데이트 및 맵 청크 처리 조정
+- 모드가 많은 환경에서 저장 파일 불러오기 속도 개선
+- 이벤트 처리 및 Lua와 Java 간 호출 성능 개선
+- 반복적으로 발생하는 모드 오류의 로그 출력 제한
+
+### 설정 화면 및 벤치마크
+
+- PZ Optimization 설정 화면 개편
+- 설정별 성능 영향 및 권장 사항 표시
+- 전체 최적화 및 그래픽 향상 프리셋 추가
+- 게임 내 벤치마크 화면 개선
+- Horde Shooting 벤치마크 추가
+
+### 입력 및 그래픽
+
+- 컨트롤러 입력 지연 개선
+- 화면 키보드 반응 속도 개선
+- 나무와 지형에서 발생하는 화면 깜빡임 수정
+- 여러 칸을 차지하는 가구의 연결 부위 표시 개선
+
+### 신규 기능 (기본값 비활성화)
+
+- Lua 컴파일러 및 테이블 메모리 최적화
+- 개선된 손전등 그림자
+- 가로등, 실내 조명, 화염 등의 추가 그림자
+- 수면 반사 효과
+- 지형 타일 경계 개선
+- 계절별 지면 장식과 낙엽 효과
+- 서리, 눈, 젖은 아스팔트의 반짝임 효과
+- 바퀴 자국 및 잔디 눌림 효과
+- 잔디 표현 개선
+
+자세한 내용은 [변경 내역](https://github.com/bongmyung-ye/PZ-Optimization-KR/blob/main/CHANGES.md)을 참고하세요.
+
+---
 
 ## 다운로드
 
-저장소의 **Releases**에서 `589f2f3f-test` 릴리스를 열고 `pzopt-589f2f3f.zip`을 받으면 됩니다. GitHub의 `Source code (zip)`은 모드 설치 파일이 아닙니다.
+[**GitHub Releases에서 다운로드**](https://github.com/bongmyung-ye/PZ-Optimization-KR/releases/tag/589f2f3f-test)
 
-다운로드한 파일은 압축을 풀어 사용합니다. 폴더 안에 `install.ps1`, `install.sh`, `pzopt-4a0e9546ec-classes.zip`이 있는지 확인하세요.
+| 파일 | 설명 |
+| --- | --- |
+| `pzopt-589f2f3f.zip` | PZ Optimization 원본 비공개 빌드 |
+| `PZOptKorean-589f2f3f.zip` | 해당 빌드용 한국어 패치 |
 
-## Windows 설치
+> GitHub에서 자동으로 제공하는 `Source code (zip)` 파일은 설치용 파일이 아닙니다. 반드시 **Assets**에 첨부된 ZIP 파일을 다운로드하세요.
 
-1. 게임과 실행 중인 좀보이드 서버를 종료합니다. 서버가 별도로 실행 중이라면 서버 파일은 건드리지 마세요.
-2. 다운로드한 ZIP을 압축 해제하고 `pzopt-589f2f3f-discord` 폴더를 엽니다.
-3. 탐색기 주소창에 `powershell`을 입력해 해당 폴더에서 PowerShell을 엽니다.
-4. 아래 명령을 실행합니다.
+---
+
+## 설치 방법
+
+### 1. PZ Optimization 설치 (Windows)
+
+설치 전에 게임을 완전히 종료하고, 저장 파일과 기존 게임 설정을 백업하세요.
+
+1. `pzopt-589f2f3f.zip`을 다운로드합니다.
+2. 압축을 해제합니다.
+3. `install.ps1`과 `pzopt-4a0e9546ec-classes.zip`이 들어 있는 폴더를 엽니다.
+4. 탐색기 주소창에 `powershell`을 입력해 해당 폴더에서 PowerShell을 실행합니다.
+5. 아래 명령어를 입력합니다.
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Zip .\pzopt-4a0e9546ec-classes.zip
 ```
 
-설치 상태 확인:
+**설치 상태 확인**
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Status
 ```
 
-제거:
+**제거**
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Uninstall
 ```
 
-게임 폴더를 찾지 못하는 경우와 Linux/macOS 설치법은 [설치 및 제거 안내](INSTALL.md)를 참고하세요.
+### 2. 한국어 패치 설치 (Windows)
 
-## 이번 빌드에서 달라진 점
+원본 최적화 모드를 설치한 다음 한국어 패치를 적용하세요.
 
-- 모드 Lua 이벤트 처리 및 저장 파일 불러오기 개선
-- 좀비·맵 청크 관련 모드 처리 조정
-- PZ Optimization 설정 화면 개편 및 벤치마크 항목 추가
-- 컨트롤러 입력과 화면 키보드 반응 개선
-- 나무, 지형, 잔디 관련 화면 깜빡임 수정
-- Lua 컴파일러, 광원 그림자, 수면 반사, 지형·잔디 기능 추가(기본값 꺼짐)
+1. `PZOptKorean-589f2f3f.zip`을 다운로드합니다.
+2. 압축을 해제합니다.
+3. 압축파일 안의 `PZOptKorean` 폴더를 `%USERPROFILE%\Zomboid\mods`에 복사합니다.
+4. 게임을 실행하고 모드 목록에서 `PZOptKorean`을 활성화합니다.
+5. PZ Optimization 설정 화면에서 한국어가 정상적으로 표시되는지 확인합니다.
 
-설정별 변경 사항과 테스트 항목은 [변경 내역 및 테스트 안내](CHANGES.md)에서 확인할 수 있습니다.
-
-## 설치 전에 확인할 점
-
-- **게임 리비전 확인:** 설치 프로그램은 게임과 배포 파일의 리비전을 비교합니다. 일치하지 않으면 설치하지 않습니다.
-- **기존 설치:** 같은 게임 폴더에 설치된 PZ Optimization 파일은 교체될 수 있습니다.
-- **Java 모드 충돌:** 동일한 게임 클래스 파일을 사용하는 다른 모드가 있으면 설치 프로그램이 중단될 수 있습니다. 원인을 모르는 상태에서 `-Force` 옵션을 사용하지 마세요.
-- **설정 파일:** 설치 과정에서 게임 폴더의 파일이 변경됩니다. `ProjectZomboid64.json`을 직접 수정한 적이 있다면 먼저 백업하세요.
-- **별도 번역 패치:** 한국어 번역 패치는 PZ Optimization 설치 파일과 구분해서 관리합니다. 이 저장소의 ZIP에 한국어 패치가 포함된 것은 아닙니다.
-
-## 파일 검증
-
-외부 배포 ZIP의 SHA-256:
+설치 후 폴더 구조는 다음과 같아야 합니다.
 
 ```text
-c4ea4f9d8df03352f2f7e6a0ef24ca5bbda66ae6c42c77b7d2a5d3384ca66009
+Zomboid/
+└── mods/
+    └── PZOptKorean/
+        └── 42.0/
+            ├── mod.info
+            ├── icon.png
+            └── media/
+                └── lua/
+                    ├── client/
+                    └── shared/
 ```
 
-내부 설치 ZIP의 SHA-256(제작자 README에 기재된 값과 일치):
+| 항목 | 내용 |
+| --- | --- |
+| 패치 이름 | PZ Optimization 한국어 패치 |
+| Mod ID | `PZOptKorean` |
+| 대상 빌드 | `589f2f3f` |
+| 설치 방식 | 로컬 모드 |
+| 설치 경로 | `%USERPROFILE%\Zomboid\mods\PZOptKorean` |
 
-```text
-bd1ff13d83a2e8739ade95ec8ca8e32212b70c1f04a310803cc1432dc69a4e30
+**기존 창작마당 한국어 패치나 이전 테스트용 패치는 동시에 활성화하지 마세요.**
+
+한국어 패치만 제거하려면 게임을 종료하고 설치한 로컬 `PZOptKorean` 폴더를 제거하면 됩니다.
+
+### 3. Linux / macOS
+
+원본 ZIP을 압축 해제한 뒤 `install.sh`가 있는 디렉터리에서 다음 명령어를 실행합니다.
+
+```bash
+bash install.sh --zip pzopt-4a0e9546ec-classes.zip
 ```
 
-검증 방법은 [설치 및 제거 안내](INSTALL.md#파일-무결성-확인)와 [`SHA256SUMS.txt`](SHA256SUMS.txt)를 참고하세요.
+Linux와 macOS의 원본 설치 방법은 [설치 안내](https://github.com/bongmyung-ye/PZ-Optimization-KR/blob/main/INSTALL.md)를 참고하세요. 한국어 패치의 설치 위치는 운영체제별 사용자 모드 경로를 확인해야 합니다.
 
-## 오류 제보
+---
 
-문제가 발생했다면 게임 빌드와 리비전, 운영체제, 그래픽카드, 활성화한 모드 수, 문제가 발생한 시점과 재현 방법을 함께 남겨주세요. 가능하면 `%USERPROFILE%\Zomboid\console.txt`의 관련 로그도 첨부해 주세요.
+## 파일 무결성 확인 (SHA-256)
 
-모드 오류는 원본 프로젝트 및 공식 Discord의 버그 제보 채널에 알려주는 것이 가장 정확합니다.
+| 파일 | SHA-256 |
+| --- | --- |
+| `pzopt-589f2f3f.zip` | `c4ea4f9d8df03352f2f7e6a0ef24ca5bbda66ae6c42c77b7d2a5d3384ca66009` |
+| `pzopt-4a0e9546ec-classes.zip` | `bd1ff13d83a2e8739ade95ec8ca8e32212b70c1f04a310803cc1432dc69a4e30` |
+| `PZOptKorean-589f2f3f.zip` | `abe6801f927ee0d08d1382af28ba3f340be8eb5e5ca285351e8626fc816b7328` |
 
-## 출처 및 권리
+Windows에서는 다운로드한 ZIP 파일이 있는 폴더에서 다음 명령어로 확인할 수 있습니다.
 
-PZ Optimization의 원저작자 및 개발자는 **xD3I**입니다. 이 저장소는 한국어 안내와 재배포 파일을 구분해서 관리합니다. 원본 모드에 새로운 라이선스를 부여하지 않으며, 제작자의 공식 릴리스를 대체하는 저장소도 아닙니다.
+```powershell
+Get-FileHash -Algorithm SHA256 ".\pzopt-589f2f3f.zip"
+Get-FileHash -Algorithm SHA256 ".\PZOptKorean-589f2f3f.zip"
+```
+
+---
+
+## 주의사항
+
+- 이 빌드는 **Project Zomboid Build 42.21 / 게임 리비전 `4a0e9546ec` 전용**입니다.
+- 게임 리비전이 다르면 설치하지 마세요.
+- 정식 안정판이 아닌 비공개 개발 빌드입니다. 게임 설정과 저장 파일을 백업한 뒤 설치하세요.
+- 다른 Java 모드가 동일한 클래스 파일을 수정하는 경우 설치가 중단될 수 있습니다.
+- 충돌 원인을 확인하지 않은 상태에서 `-Force` 옵션을 사용하지 마세요.
+- 원본 모드와 한국어 패치는 별도의 ZIP으로 배포합니다.
+- 기존 창작마당 한국어 패치와 이번 한국어 패치를 중복으로 활성화하지 마세요.
+- 원본 모드가 업데이트되면 현재 한국어 패치와 호환되지 않을 수 있습니다.
+- 한국어 패치를 제거하더라도 PZ Optimization 원본은 자동으로 제거되지 않습니다.
+
+---
+
+## 제작자 및 배포 안내
+
+**PZ Optimization**
+
+- 제작자: [xD3I](https://github.com/xD3I)
+- 원본 저장소: https://github.com/xD3I/PZ_Optimization
+
+**한국어 패치 및 커뮤니티 배포**
+
+- 관리: [bongmyung-ye](https://github.com/bongmyung-ye)
+- 한국어 패치 소스: https://github.com/bongmyung-ye/pzopt-korean
+- 배포 저장소: https://github.com/bongmyung-ye/PZ-Optimization-KR
+
+PZ Optimization 원본의 저작권은 제작자에게 있습니다.
+
+이 저장소는 제작자의 재배포 허락을 받아 비공개 개발 빌드를 공유하고, 한국어 설치 안내와 별도 한국어 패치를 제공하기 위해 운영합니다.
+
+본 저장소는 PZ Optimization의 공식 개발 저장소가 아닙니다.
