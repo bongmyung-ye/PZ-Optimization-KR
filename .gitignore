@@ -1,0 +1,5 @@
+# 설치 파일은 Git 저장소에 커밋하지 않고 GitHub Releases에만 첨부합니다.
+*.zip
+*.jar
+*.class
+pzopt-589f2f3f-discord/
